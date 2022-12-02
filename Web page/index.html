@@ -9,21 +9,191 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Inter&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            width: 1200px;
+        }
+
+        .container1 {
+            border: 1px solid blue;
+            display: grid;
+            grid-template-columns: 25% 1fr 20%;
+            margin: 30px; 
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navigation {
+            border: 1px solid red;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        } 
+
+        li {
+            margin-left: 15px;
+            margin-right: 15px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .logo {
+            width: 180px;
+            height: 51px;
+        }
+
+        .button1 {
+            background: #75BF7A;
+            width: 182px;
+            height: 50px;
+            border-radius: 5.95238px;
+            border: #75BF7A;
+            color: white;
+            font-size: larger;
+        }
+
+        .helpcenter {
+            border: 1px solid green;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .container2 {
+            border: 1px solid blue;
+            height: 850px;
+            margin: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 82% 1fr;
+            
+        }
+
+        .middlepart {
+            border: 1px solid black;
+            display: grid;
+            grid-template-rows: 50% 1fr 1fr; 
+        }
+
+        .headingtext {
+            width: 557px;
+            height: 270px;      
+            font-size: 60px;
+            line-height: 66px;
+            font-weight: bolder;
+        }
+
+        .text {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            width: 550px;
+            height: 150px;
+            color: #9E9DA2;
+        }
+
+        .buttons {
+            display: flex;
+            
+        }
+
+        .button2 {
+            width: 260px;
+            height: 60px;
+            margin-right: 15px;
+        }
+
+        .mainphoto {
+            z-index: -1; 
+        }
+
+        .green_area {
+            border: 1px solid red;
+            grid-area: 2/1/3/3;
+            background-color: #75BF7A;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text2 {
+            border: 1px solid red;
+            width: 246px;
+            height: 56px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24.6006px;
+            line-height: 28px;
+            color: white;
+            margin-right: 100px;
+        }
+
+        .inputarea {
+            width: 450px;
+            height: 55px;
+            margin-right: 10px;
+            border-radius: 4.39297px;
+            border-color: white;
+        }
+
+        .submit {
+            width: 230px;
+            height: 55px;
+            background: #000000;
+            border-radius: 4.39297px;
+            color: white;  
+            font-style: normal;
+            font-weight: 800;
+            font-size: 22px;
+            line-height: 0px;
+        }
+    </style>
 </head>
 <body>
     <header class="container1">
-        <div class="logo_navigation">
-            <div>
-                <img class="logo" src="Assets/images/logo.png" alt="logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">How tere workds</a></li>
-                    <li><a href="#">Tere benefits</a></li>
-                </ul>
-            </nav>
+        <div>
+            <img class="logo" src="Assets/images/logo.png" alt="logo">
         </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">How tere workds</a></li>
+                <li><a href="#">Tere benefits</a></li>
+            </ul>
+        </nav>
+        <div class="helpcenter"><button type="button" class="button1">Help Center</button></div>
     </header>
+    <main>
+        <div class="container2">
+            <div class="middlepart">
+                <p class="headingtext">DOWNLOAD APP, SAVE MONEY, MAKE FRIENDS!</p>
+                <p class="text">Its simple and its free. Play your part in reducing Carbon Footprint and help Mother Nature to sustain its beauty. So what are you waiting for ?  
+                Lets ride together</p>
+                <div class="buttons">
+                    <img class="button2" src="Assets/images/downloadbutton1.png" alt="download1">
+                    <img class="button2" src="Assets/images/downloadbutton2.png" alt="download2">
+                </div>
+            </div>
+            <div>
+                <img class="mainphoto" src="Assets/images/main_photo.png" alt="main_image">
+            </div>
+            <div class="green_area">
+                
+                    <p class="text2">Let’s go. Get a link to download the app.</p>
+                    <input type="text" class="inputarea" placeholder="Enter mobile phone number"/>
+                    <input type="submit" class="submit" value="APPLY TO DRIVE" />
+                
+            </div>
+        </div>   
+    </main>
 </body>
 </html>
