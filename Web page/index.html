@@ -156,6 +156,65 @@
             font-size: 22px;
             line-height: 0px;
         }
+
+        .container3 {
+            border: 1px solid blue;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 20% 1fr;
+            margin-top: 100px;
+            margin-left: 30px;
+            height: 950px;
+            gap: 10px;
+        }
+        
+        .howtereworks {
+            border: 1px solid green;
+            grid-area: 1/1/2/4;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .heading {
+            border: 1px solid red;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 46.3862px;
+            line-height: 50px;
+            margin: 10px;
+        }
+
+        .text3 {
+            border: 1px solid rebeccapurple;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 23px;
+            line-height: 26px;
+            text-align: center;
+            color: #9E9DA2;
+            width: 50%;
+            margin: 10px;
+        }
+
+        .greencircle {
+            z-index: -1;
+            position: absolute;
+            width: 400px;
+            height: 400px;
+        }
+
+        .phoneimage {
+            position: absolute;
+            width: 278.98px;
+            height: 560px;
+        }
+
+        .dots {
+            position: absolute;
+        }
     </style>
 </head>
 <body>
@@ -187,13 +246,48 @@
                 <img class="mainphoto" src="Assets/images/main_photo.png" alt="main_image">
             </div>
             <div class="green_area">
-                
-                    <p class="text2">Let’s go. Get a link to download the app.</p>
-                    <input type="text" class="inputarea" placeholder="Enter mobile phone number"/>
-                    <input type="submit" class="submit" value="APPLY TO DRIVE" />
-                
+                <p class="text2">Let's go. Get a link to download the app.</p>
+                <input type="text" class="inputarea" placeholder="Enter mobile phone number"/>
+                <input type="submit" class="submit" value="APPLY TO DRIVE" />
             </div>
         </div>   
+        <div class="container3">
+            <div class="howtereworks">
+                <p class="heading">HOW TERE WORKS</p>
+                <p class="text3">Download and install the tere app. Enter your phone number and make your user account. when approved you may start driving.</p>
+            </div>
+            <div>
+                <div>
+                    <img src="Assets/images/number1.PNG" alt="number 1">
+                    <p>REQUEST A RIDE</p>
+                    <p>Have to reach office or going for shopping ? 
+                        Just put your current location and destination and search a ride that suits you</p>
+                </div>
+                <div>
+                    <img src="Assets/images/number3.PNG" alt="number 3">
+                    <p>INSTANT NOTIFICATIONS</p>
+                    <p>Get instant notifications for your rides and be in contact with fellow riders all the time</p>
+                </div>
+            </div>
+            <div>
+                <img class="phoneimage" src="Assets/images/phone.png" alt="phone">
+                <img class="greencircle" src="Assets/images/green_circle.png" alt="green circle">
+                <img class="dots" src="Assets/images/thing_for_phone.png" alt="dots">
+            </div>
+            <div>
+                <div>
+                    <img src="Assets/images/number2.PNG" alt="number 2">
+                    <p>POST A RIDE</p>
+                    <p>Going somewhere but hate to travel alone - 
+                        just post your ride details and publish it</p>
+                </div>
+                <div>
+                    <img src="Assets/images/number4.PNG" alt="number 4">
+                    <p>CASHLESS PAYMENT</p>
+                    <p>Payment made easy by using your own Wallet - no more cash to carry</p>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
