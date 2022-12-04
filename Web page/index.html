@@ -6,349 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Assets/normalize.css">
+    <link rel="stylesheet" href="Assets/Styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Inter&family=Roboto&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            width: 1200px;
-        }
-
-        main {
-            background-color: hsl(100, 99%, 98%);
-        }
-
-        .container1 {
-            border: 1px solid blue;
-            display: grid;
-            grid-template-columns: 25% 1fr 20%;
-            margin: 30px; 
-            align-items: center;
-            justify-content: center;
-        }
-
-        .navigation {
-            border: 1px solid red;
-            list-style: none;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-        } 
-
-        li {
-            margin-left: 15px;
-            margin-right: 15px;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 13px;
-            line-height: 20px;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        .logo {
-            width: 180px;
-            height: 51px;
-        }
-
-        .button1 {
-            background: #75BF7A;
-            width: 182px;
-            height: 50px;
-            border-radius: 5.95238px;
-            border: #75BF7A;
-            color: white;
-            font-size: larger;
-        }
-
-        .helpcenter {
-            border: 1px solid green;
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .container2 {
-            border: 1px solid blue;
-            height: 850px;
-            margin: 30px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 82% 1fr;
-            
-        }
-
-        .middlepart {
-            border: 1px solid black;
-            display: grid;
-            grid-template-rows: 50% 1fr 1fr; 
-        }
-
-        .headingtext {
-            width: 557px;
-            height: 270px;      
-            font-size: 60px;
-            line-height: 66px;
-            font-weight: bolder;
-        }
-
-        .text {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 28px;
-            width: 550px;
-            height: 150px;
-            color: #9E9DA2;
-        }
-
-        .buttons {
-            display: flex;
-            
-        }
-
-        .button2 {
-            width: 260px;
-            height: 60px;
-            margin-right: 15px;
-        }
-
-        .mainphoto {
-            z-index: -1; 
-        }
-
-        .green_area {
-            border: 1px solid red;
-            grid-area: 2/1/3/3;
-            background-color: #75BF7A;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .text2 {
-            border: 1px solid red;
-            width: 246px;
-            height: 56px;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 24.6006px;
-            line-height: 28px;
-            color: white;
-            margin-right: 100px;
-        }
-
-        .inputarea {
-            width: 450px;
-            height: 55px;
-            margin-right: 10px;
-            border-radius: 4.39297px;
-            border-color: white;
-        }
-
-        .submit {
-            width: 230px;
-            height: 55px;
-            background: #000000;
-            border-radius: 4.39297px;
-            color: white;  
-            font-style: normal;
-            font-weight: 800;
-            font-size: 22px;
-            line-height: 0px;
-        }
-
-        .container3 {
-            border: 1px solid blue;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 30% 1fr;
-            margin-top: 100px;
-            margin-left: 30px;
-            height: 900px;
-            gap: 10px;
-        }
-        
-        .howtereworks {
-            border: 1px solid green;
-            grid-area: 1/1/2/4;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .heading {
-            border: 1px solid red;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 46.3862px;
-            line-height: 50px;
-            margin: 10px;
-        }
-
-        .text3 {
-            border: 1px solid rebeccapurple;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 23px;
-            line-height: 26px;
-            text-align: center;
-            color: #9E9DA2;
-            width: 50%;
-            margin: 10px;
-        }
-
-        .heading1,
-        .heading2,
-        .heading3,
-        .heading4 {
-            font-style: normal;
-            font-weight: 800;
-            font-size: 22px;
-            line-height: 50px;
-            margin: 10px;
-        }
-
-        .text4,
-        .text5,
-        .text6,
-        .text7 {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 26px;
-            text-align: right;
-            color: #9E9DA2;
-            width: 290px;
-            height: 91px;
-            margin: 10px;
-        }
-
-        .text6,
-        .text7 {
-            text-align: start;
-        }
-
-        .block1,
-        .block2 {
-            border: 1px solid red;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            margin: 30px;
-        }
-
-        .block3,
-        .block4 {
-            border: 1px solid red;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin: 30px;
-        }
-
-        .number1,
-        .number2,
-        .number3,
-        .number4 {
-            width: 60.82px;
-            height: 60.82px;   
-        }
-
-        .images {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-}
-
-        .greencircle {
-            z-index: -1;
-            position: absolute;
-            width: 400px;
-            height: 400px;
-            top: 1320px;
-        }
-
-        .phoneimage {
-            width: 278.98px;
-            height: 560px;
-        }
-
-        .dots {
-            width: 65px;
-            height: 12.77px;        
-        }
-
-        .terebenefits {
-            font-style: normal;
-            font-weight: 800;
-            font-size: 46.3862px;
-            line-height: 50px;
-            display: flex;
-            justify-content: center;
-            margin-top: 60px;
-        }
-
-        .container4 {
-            border: 1px solid red;
-            display: grid;
-            grid-template-columns: 70% 1fr;
-            height: 300px;
-            align-items: center;
-            margin-left: 30px;
-        }
-
-        .benefits1 {
-            border: 1px solid green;
-            height: 200px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .one {
-            border: 1px solid blue;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 88px;
-            line-height: 119px;
-            color: #75BF7A;
-            width: 107px;
-            height: 119px;
-        }
-
-        .flexiblehours {
-            border: 1px solid blue;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 33.9429px;
-            line-height: 32px;  
-            width: 218px;
-            height: 65px;
-        }
-
-        .text8 {
-            border: 1px solid blue;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 22px;
-            line-height: 23px;
-            color: #9E9DA2;
-            width: 385px;
-            height: 47px;
-        }
-
-        .image1 {
-            border: 1px solid blue;
-            width: 256.79px;
-            height: 254.82px;
-        }
-    </style>
 </head>
 <body>
     <header class="container1">
@@ -426,7 +87,7 @@
         </div>
         <div class="container4">
             <div class="benefits1">
-                <div>
+                <div class="wrapper1">
                     <p class="one">01.</p>
                     <p class="flexiblehours">Flexible working hours</p>
                 </div>
@@ -438,21 +99,47 @@
         </div>
         <div class="container5">
             <div>
-                <img src="Assets/images/frame2.png" alt="frame2">
+                <img class="image2" src="Assets/images/frame2.png" alt="frame2">
             </div>
             <div class="benefits2">
-                <p class="two">02.</p>
-                <p class="earnings">Earnings</p>
-                <p class="text9">By driving with tere you can earn more.</p>
+                <div class="wrapper1">
+                    <p class="one">02.</p>
+                    <p class="flexiblehours">Earnings</p>
+                </div>
+                <p class="text8">By driving with tere you can earn more.</p>
             </div>
         </div>
         <div class="container6">
-            <div class="benefits3">
-                <p class="three">03.</p>
-                <p class="customersupport">Customer support 24/7</p>
+            <div class="benefits1">
+                <div class="wrapper1">
+                    <p class="one">03.</p>
+                    <p class="flexiblehours">Customer support 24/7</p>
+                </div>    
                 <p class="text10">Tere is a local service provider and we are proud to support you in your local language. We are proud to be at your service 24/7!</p>
+            </div>
+            <div>
+                <img class="image3" src="Assets/images/image3.png" alt="frame3">
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <img class="logo2" src="Assets/images/logo2.png" alt="logo2">
+        <div>
+            <p class="beourfriend">Be Our Friend</p>
+            <p class="address">3, Season Park, Jakarta <br>
+                support@foodyar.c.id <br>
+                021-1111-2222
+            </p>
+        </div>
+        <div>
+            <p class="beourfriend">Be Our Friend</p>
+            <p class="address">3, Season Park, Jakarta <br>
+                support@foodyar.c.id <br>
+                021-1111-2222
+            </p>
+        </div>
+        <img class="button3" src="Assets/images/downloadbutton1.png" alt="download1">
+        <img class="button3" src="Assets/images/downloadbutton2.png" alt="download2">
+    </footer>
 </body>
 </html>
